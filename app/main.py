@@ -13,7 +13,7 @@ TOKEN = os.environ.get("TOKEN")
 if not TOKEN:
     raise ValueError("TOKEN environment variable is missing")
 
-model_name = "Diamonds"
+model_name = "Diamonds_regression_model"
 version = "v1.0"
 
 # Define the input data model
