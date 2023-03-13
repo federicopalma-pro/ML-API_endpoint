@@ -1,2 +1,2 @@
 # ML-API_endpoint
-Best practices for building an API endpoint for machine learning
+Best practices for dockerizing an API endpoint for machine learning
