@@ -17,9 +17,9 @@ The diamond prediction model is an essential component of the endpoint created i
 To provide sufficient protection , a token has been implemented in the FastAPI-based endpoint. This token can be generated using the [token_generator.py](https://github.com/federicopalma-pro/ML-API_endpoint/blob/main/token_generator.py) script, which provides a secure way to create random tokens and their corresponding SHA256 encoded values. Once developed, the SHA256 encoded token value can be added to the Dockerfile as an environment variable using the ENV command, while the token itself can be used for making POST requests to the endpoint.
 
 
-​```Token: a161357752f286ff2439cddc9f0e5a985ce3d853d312859550a8f508606bca6f​```
+​```Token: 1ccdca926bd110af8413ef97f9acef15bea4643b621737a4cb435b0d914908e2​```
 
-​```Token encoded sha256: edec7e481b0322c89e99b6632a6f51a3c492b571a3e1ddcfad9000dbf6b2abe9​```
+​```Token encoded sha256: 82d7db8615ea2724a727be9892cad972a78b90576158693f72e817f1b80a33a9​```
 
 ### - building the docker image
 
