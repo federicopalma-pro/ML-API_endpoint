@@ -39,3 +39,26 @@ To build the Docker image for the ML endpoint, you can use the following steps:
 
 This command should display a list of all the Docker images that are currently available on your local machine. You should see an entry for ml-endpoint in the list.
 
+### - runnig the docker image
+
+Once you have built the Docker image for the ML endpoint, you can run it using the following steps:
+
+ - Open a terminal window and navigate to the root directory of the ML-API_endpoint repository.
+
+ - Run the following command to start a Docker container with the name diamonds and the ml-endpoint image:
+
+​```docker run -d --name diamonds -p 8080:8080 ml-endpoint​```
+
+This command tells Docker to start a new container with the name diamonds, mapping the host port 8080 to the container port 8080. The container will run in detached mode (-d) so that it runs in the background and doesn't block the terminal.
+
+Once the container is running, you can verify that it is working correctly by making a test request to the endpoint using curl:
+
+​```curl -X GET http://localhost:8080/​```
+
+You should get as responce from endpoint:
+
+​```
+"name": "Diamonds_regression_model",
+"version": "v1.0",
+"status": "ok"
+​```
