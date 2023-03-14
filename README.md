@@ -12,7 +12,7 @@ The creation of the diamond prediction model can be found in this repository: ht
 The diamond prediction model is an essential component of the endpoint created in this repository. The model is loaded into memory when the Docker container is started and can be queried using a POST request to the /predict endpoint. The endpoint expects a JSON payload containing the characteristics of the diamond, and it returns a JSON response containing the expected price.
 
 ## Deploy
-### - generate token
+### - generating the token
 
 To provide sufficient protection , a token has been implemented in the FastAPI-based endpoint. This token can be generated using the [token_generator.py](https://github.com/federicopalma-pro/ML-API_endpoint/blob/main/token_generator.py) script, which provides a secure way to create random tokens and their corresponding SHA256 encoded values. Once developed, the SHA256 encoded token value can be added to the Dockerfile as an environment variable using the ENV command, while the token itself can be used for making POST requests to the endpoint.
 
@@ -20,3 +20,22 @@ To provide sufficient protection , a token has been implemented in the FastAPI-b
 ​```Token: a161357752f286ff2439cddc9f0e5a985ce3d853d312859550a8f508606bca6f​```
 
 ​```Token encoded sha256: edec7e481b0322c89e99b6632a6f51a3c492b571a3e1ddcfad9000dbf6b2abe9​```
+
+### - building the docker image
+
+To build the Docker image for the ML endpoint, you can use the following steps:
+
+ - Make sure you have Docker installed on your local machine.
+
+ - Open a terminal window and navigate to the root directory of the ML-API_endpoint repository.
+
+ - Run the following command to build the Docker image:
+
+​```docker build -t ml-endpoint .​```
+
+ - Once the build process is complete, you can verify that the image was created successfully by running the following command:
+
+​```docker images​```
+
+This command should display a list of all the Docker images that are currently available on your local machine. You should see an entry for ml-endpoint in the list.
+
