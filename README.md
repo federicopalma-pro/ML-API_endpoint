@@ -53,8 +53,7 @@ This command tells Docker to start a new container with the name diamonds, mappi
 
 Once the container is running, you can verify that it is working correctly by making a test request to the endpoint using curl:
 
-​```curl -X GET http://localhost:8080/ -H "Authorization: Bearer a161357752f286ff2439cddc9f0e5a985ce3d853d312859550a8f508606bca6f"
-​```
+​```curl -X GET http://localhost:8080/​```
 
 You should get as responce from endpoint:
 
