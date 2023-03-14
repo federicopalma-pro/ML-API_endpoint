@@ -59,7 +59,7 @@ Once the container is running, you can verify that it is working correctly by ma
 You should get as responce from endpoint:
 
 ​```
-"name": "Diamonds_regression_model",
+{"name": "Diamonds_regression_model",
 "version": "v1.0",
-"status": "ok"
+"status": "ok"}
 ​```
