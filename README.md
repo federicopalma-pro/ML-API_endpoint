@@ -62,3 +62,29 @@ You should get as responce from endpoint:
 "version": "v1.0",
 "status": "ok"}
 ​```
+
+## Predictions Diamond price
+
+After successfully dockerizing and deploying the endpoint, you can use it to predict diamond prices by providing the required input data. To do so, visit the URL ​```localhost:8080/docs​``` to access the FastAPI graphical interface and make a POST request with the necessary diamond data. Ensure that you include the authentication token and pass the diamond data in JSON format as follows:
+
+​```{
+    "carat": 1.00,
+    "cut": "Ideal",
+    "color": "F",
+    "clarity": "SI2",
+    "depth": 40.5,
+    "table": 58.0,
+    "x": 6.92,
+    "y": 5.83,
+    "z": 4.16
+}​```
+
+Upon submitting the request, you will receive the predicted diamond price in the following format:
+
+​```{
+    "predicted_price": 2583.706772183785
+}​```
+
+Ensure to follow the instructions accurately and provide the necessary details to get the predicted diamond price successfully.
+
+At this point, you can make a REST call from any application and receive the price of your favourite diamond!
